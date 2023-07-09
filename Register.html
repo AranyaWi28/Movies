@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- <video src="video/john wick.webm" autoplay muted></video> -->
+    <nav>
+        <div class="logo_ul">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <ul>
+                <!-- <li>
+                    <a href="#">HOME</a>
+                </li> -->
+                <li>
+                    <a href="index.html">MOVIE</a>
+                </li>
+                <li>
+                    <a href="Fav.html">FAVORITE</a>
+                </li>
+                <li>
+                    <a href="product.html">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT.</a>
+                </li>
+                <li>
+                    <a href="Register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search_user">
+            <input type="text" placeholder="SEARCH..." id="search_input">
+            <a href="Profile.html">
+                <img src="img/user2.jpg" alt="">
+            </a>  
+            </div>
+        </div>
+    </nav>
+    
+
+    <form action="register.php" method="post" class="register-form">
+        <h2>SIGN UP</h2>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+    </header>
+    
+</body>
+</html>
