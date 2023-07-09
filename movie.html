@@ -44,8 +44,8 @@
     </nav>  
   </header>
 
-  <div class="w-full h-screen bg-slate-800">
-    <div class="max-w-[1440px] h-auto mx-auto text-white pt-10 flex flex-col gap-6 px-6">
+  <div class="w-full min-h-screen bg-slate-800">
+    <div class="max-w-[1440px] h-auto mx-auto text-white py-10 flex flex-col gap-6 px-6">
       <!-- Movie title and rating -->
       <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-center">
         <div class="flex flex-col gap-2 flex-1">
@@ -106,9 +106,13 @@
         </div>
         <div class="col-span-7 h-full relative">
           <img src="/img/Topgun_Maverick2.jpg" class="w-full h-full object-cover">
-          <div class="absolute bottom-4 left-4">
+          <div class="absolute bottom-4 left-6 flex flex-row items-center gap-4">
             <div class="border-[3px] rounded-full flex flex-row items-center justify-center p-4 px-5">
-              <i class="fa-solid fa-play text-3xl"></i>
+                <i class="fa-solid fa-play text-3xl"></i>
+            </div>
+            <div class="flex flex-row gap-2 items-end font-semibold">
+              <div class="text-3xl">Play trailer</div>
+              <div class="text-lg">2:31</div>
             </div>
           </div>
         </div>
@@ -154,9 +158,93 @@
               <div class="text-base font-semibold">99+ PHOTOS</div>
           </div>
         </div>
-      </div>  
-    </div>
+      </div> 
 
+      <!-- Movie detail -->
+      <div class="w-3/4 h-auto flex flex-col gap-4">
+        <div class="flex flex-row gap-4">
+          <div class="py-[3px] px-3 border border-neutral-300 rounded-full bg-slate-800 hover:bg-slate-700 transition">Action</div>
+          <div class="py-[3px] px-3 border border-neutral-300 rounded-full bg-slate-800 hover:bg-slate-700 transition">Drama</div>
+        </div>
+        <div class="text-lg pb-4 border-b border-neutral-300/40">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.</div>
+        <div class="text-lg pb-4 border-b border-neutral-300/40 flex flex-row gap-4">
+          <div class="text-xl font-bold">ผู้กำกับ</div>
+          <a href="#" class="text-blue-400 hover:underline">Joseph Kosinski</a>
+        </div>
+        <div class="text-lg pb-4 border-b border-neutral-300/40 flex flex-row gap-4">
+          <div class="text-xl font-bold">นักเขียนบท</div>
+          <a href="#" class="text-blue-400 hover:underline">Jim CashJack · Epps Jr. · Peter Craig</a>
+        </div>
+        <div class="text-lg pb-4 flex flex-row gap-4">
+          <div class="text-xl font-bold">นักแสดงนำ</div>
+          <a href="#" class="text-blue-400 hover:underline">Tom Cruise · Jennifer Connelly · Miles Teller</a>
+        </div>
+      </div>
+
+       <!-- Movie showing times -->
+      <div class="w-3/4 h-auto flex flex-col gap-4">
+        <div class="flex flex-row items-center">
+            <div class="text-xl font-bold pr-5 border-r">โรงภาพยนต์ 1</div>
+            <div class="text-xl font-bold px-5 border-r flex flex-row items-center gap-4">
+              <i class="fa-solid fa-volume-high"></i>
+              <div class="flex flex-row items-center gap-2 font-normal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg" alt="" width="26" height="26">
+                /
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/1920px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png" alt="" width="26" height="26">
+              </div>
+            </div>
+            <img src="https://www.majorcineplex.com/public/assets/booking/assets/images/type-laser.png" alt="" class="ml-4">
+        </div>
+        <div class="flex flex-row items-center gap-4">
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md">13:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border border-rose-600 bg-rose-600 rounded-md text-white">16:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md bg-white text-black">19:00</div>
+        </div>
+      </div>
+
+       <!-- Movie showing times -->
+      <div class="w-3/4 h-auto flex flex-col gap-4 mt-3">
+        <div class="flex flex-row items-center">
+            <div class="text-xl font-bold pr-5 border-r">โรงภาพยนต์ 2</div>
+            <div class="text-xl font-bold px-5 border-r flex flex-row items-center gap-4">
+              <i class="fa-solid fa-volume-high"></i>
+              <div class="flex flex-row items-center gap-2 font-normal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg" alt="" width="26" height="26">
+                /
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/1920px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png" alt="" width="26" height="26">
+              </div>
+            </div>
+            <img src="https://www.majorcineplex.com/public/assets/booking/assets/images/type-laser.png" alt="" class="ml-4">
+        </div>
+        <div class="flex flex-row items-center gap-4">
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md">13:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border border-rose-600 bg-rose-600 rounded-md text-white">16:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md bg-white text-black">19:00</div>
+        </div>
+      </div>
+
+       <!-- Movie showing times -->
+      <div class="w-3/4 h-auto flex flex-col gap-4 mt-3">
+        <div class="flex flex-row items-center">
+            <div class="text-xl font-bold pr-5 border-r">โรงภาพยนต์ 3</div>
+            <div class="text-xl font-bold px-5 border-r flex flex-row items-center gap-4">
+              <i class="fa-solid fa-volume-high"></i>
+              <div class="flex flex-row items-center gap-2 font-normal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg" alt="" width="26" height="26">
+                /
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/1920px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png" alt="" width="26" height="26">
+              </div>
+            </div>
+            <img src="https://www.majorcineplex.com/public/assets/booking/assets/images/type-laser.png" alt="" class="ml-4">
+        </div>
+        <div class="flex flex-row items-center gap-4">
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md">13:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border border-rose-600 bg-rose-600 rounded-md text-white">16:00</div>
+          <div class="py-2 px-7 text-xl font-semibold border rounded-md bg-white text-black">19:00</div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-- cdn font awesome -->
