@@ -15,7 +15,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
-
+    overflow-y:scroll; 
     justify-content: center
 
 }
@@ -264,11 +264,38 @@ header nav .search_user .search .card .cont{
     color: #fff;
     cursor: pointer;
     margin-top: 20px;
+    font-weight: 900;
     
 }
 
 .register-form input[type="submit"]:hover {
     background-color: #B22222;
+    
+}
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#800000;
+}
+.register-form {
+    margin-top: 100px; /* ปรับค่าขนาดระยะห่างด้านบนของฟอร์ม */
+}
+
+.register-form input[type="login"] {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00a2ff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    
+}
+.register-form input[type="login"]:hover {
+    background-color: #007dc5;
     
 }
 .register-form h2 {
