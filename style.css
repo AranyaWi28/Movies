@@ -424,10 +424,10 @@ header section .cards {
     align-items: center;
     overflow-x: auto;
 }
-
+/* 
 header section .cards::-webkit-scrollbar {
-    /* display:contents; */
-}
+    display:contents;
+} */
 
 header section .cards .card {
     position: relative;
