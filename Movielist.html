@@ -48,41 +48,50 @@
         }
     
         
-        .poster img {
-            width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
+       .poster img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
-        .poster h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
+.poster h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 
-        .poster p {
-            font-size: 14px;
-            color: #3f99ff;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-top: 40px;
-        }
-        .poster {
-            height: 100%;
-            width: 300px;
-            background-color: #FFF;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-        }
+.poster p {
+    font-size: 14px;
+    color: #3f99ff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scroll for overflowing content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    max-width: 100%;
+    padding: 0 20px; /* Add some padding to the container */
+}
+
+.poster {
+    flex: 0 0 auto; /* Disable flex-shrink and flex-grow */
+    width: 300px; /* Set a fixed width for each poster */
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+
         
     </style>
 </head>
@@ -110,10 +119,16 @@
                         <a href="product.html">PRODUCT</a>
                     </li>
                     <li>
-                        <a href="contact.html">CONTACT.</a>
+                        <a href="contact.html">CONTACT</a>
                     </li>
                     <li>
-                        <a href="Register.html">Register</a>
+                        <a href="Register.html">REGISTER</a>
+                    </li>
+                    <li>
+                        <a href="login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="movie.html">MOVIE DETAIL</a>
                     </li>
                 </ul>
             </div>
