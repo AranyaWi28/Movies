@@ -15,7 +15,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
+
     justify-content: center
+
 }
 
 header{
@@ -426,10 +428,10 @@ header section .cards {
     align-items: center;
     overflow-x: auto;
 }
-
+/* 
 header section .cards::-webkit-scrollbar {
-    /* display:contents; */
-}
+    display:contents;
+} */
 
 header section .cards .card {
     position: relative;
@@ -542,7 +544,7 @@ section.products .card .btn:hover {
 
 section.productsDetail .details {
     display: flex;
-    width: 100%;
+    width: 91%;
     height: 100%;
     margin: 20px;
     padding: 20px;
@@ -557,6 +559,7 @@ section.productsDetail .details .inCard {
     width: 300px;
     height: 720px;
     margin: 20px;
+    
     padding: 20px;
     background-color: #ffffff;
     border-width: 1;
@@ -568,6 +571,33 @@ section.productsDetail .details .inCard {
 section.productsDetail .details .Image img{
     width: 600px;
     height: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.productsDetail .details .Image2 img{
+    width: 700px;
+    margin-left: 3%;
+    
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.productsDetail .details .Text{
+    width: 600px;
+    height: 127px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.productsDetail .details .Text2{
+    width: 700px;
+    margin-left: 3%;
+    height: 127px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section.productsDetail .details .inCard img {
@@ -583,7 +613,7 @@ section.productsDetail .details h3 {
 
 section.productsDetail .details p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     color: #777;
 }
 
